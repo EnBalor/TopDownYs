@@ -11,6 +11,7 @@ public class NameInput : MonoBehaviour
     public TMP_Text nameText;
 
     public GameObject textJoin;
+    public GameObject ingameChageMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class NameInput : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 
-    public void JoinButton()
+    public void InputText()
     {
         if(inputField.text.Length > 2 && inputField.text.Length < 10)
         {
@@ -26,5 +27,12 @@ public class NameInput : MonoBehaviour
             nameText.text = inputField.text;
             textJoin.SetActive(false);
         }
+    }
+
+    public void IngameChange()
+    {
+        ingameChageMenu.SetActive(true);
+        Time.timeScale = 0.0f;
+        InputText();
     }
 }

@@ -17,14 +17,21 @@ public class Selectbutton : MonoBehaviour
     public void ElfSelect()
     {
         spriteChange.SelectElf();
-        portraitChange.ElfChange();
+        if(portraitChange.gameObject.activeSelf)
+        {
+            portraitChange.ElfChange();
+        }
         selectButton.SetActive(false);
     }
 
     public void DocSelect()
     {
         spriteChange.SelectDoc();
-        portraitChange.DocChange();
+        Debug.Log(portraitChange.gameObject.activeSelf);
+        if(portraitChange.gameObject.activeSelf)
+        {
+            portraitChange.DocChange();
+        }
         selectButton.SetActive(false);
     }
 }

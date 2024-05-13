@@ -18,5 +18,16 @@ public class PlayerSprite : MonoBehaviour
     {
         spriteRenderer.sprite = sprite;
         animator.runtimeAnimatorController = controller;
+
+        
+    }
+    public void DocAnimation()
+    {
+        animator.Play("Doc_Idle");
+    }
+
+    public void ElfAnimation()
+    {
+        animator.Play("Elf_Idle");
     }
 }
