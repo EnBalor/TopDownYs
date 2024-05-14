@@ -1646,6 +1646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646171519}
   - component: {fileID: 646171520}
+  - component: {fileID: 646171521}
   m_Layer: 0
   m_Name: angel
   m_TagString: Untagged
@@ -1720,6 +1721,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &646171521
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646171518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 389631ca61931e94492a7bef5dd4bc0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &653837719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,8 +3421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46673ca24ba9d184f94bb40356bc4dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkbar: {fileID: 1813624536}
+  player: {fileID: 0}
   talkUI: {fileID: 1135287790}
+  talkbar: {fileID: 1813624536}
+  detectRadius: 5
 --- !u!1 &1322679534
 GameObject:
   m_ObjectHideFlags: 0
@@ -6239,8 +6263,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46673ca24ba9d184f94bb40356bc4dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkbar: {fileID: 1813624536}
+  player: {fileID: 0}
   talkUI: {fileID: 1135287790}
+  talkbar: {fileID: 1813624536}
+  detectRadius: 5
 --- !u!1 &1550796658
 GameObject:
   m_ObjectHideFlags: 0
@@ -22241,7 +22267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e1b52695573608646997f04215206edf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b9b8f43d077c714dbe5524f7df54b98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22776,7 +22802,7 @@ Animator:
   m_GameObject: {fileID: 4993890593496210494}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce43bbe8322b454499f2f92adf8000a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

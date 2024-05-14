@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Talkbutton : MonoBehaviour
+public class Talkbutton : NpcTalk
 {
-    public GameObject talkbar;
-    public GameObject talkUI;
-
     public void Talk()
     {
         talkbar.SetActive(true);
